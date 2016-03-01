@@ -1,0 +1,2 @@
+tput: No value for $TERM and no -T specified
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_kmeans: line 1: 55111 Segmentation fault      (core dumped) ./gpgpu_ptx_sim__kmeans -o -i ./data/204800.txt > output_kmeans.txt

@@ -1,0 +1,830 @@
+
+Fatbin elf code:
+================
+arch = sm_20
+code version = [1,4]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = kmeans_cuda.cu
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0      0     
+   5               0               0        3        0      0     
+   6               0             392        3        0      7     .text._Z11kmeansPointPfiiiPiS_S_S0_
+   7               0               0        3        0      9     .nv.info._Z11kmeansPointPfiiiPiS_S_S0_
+   8               0               0        3        0     11     .nv.info
+   9               0             256        3        0      4     .text._Z14invert_mappingPfS_ii
+  10               0               0        3        0      6     .nv.info._Z14invert_mappingPfS_ii
+  11               0               0        3        0      5     .nv.constant0._Z14invert_mappingPfS_ii
+  12               0               0        3        0      8     .nv.constant0._Z11kmeansPointPfiiiPiS_S_S0_
+  13               0               0        3        0     10     .nv.constant2
+  14               0             392       12       10      7     _Z11kmeansPointPfiiiPiS_S_S0_
+  15               0             256       12       10      4     _Z14invert_mappingPfS_ii
+  16               0               0       1a        0      0     t_features
+  17               0               0       1a        0      0     t_features_flipped
+  18               0               0       1a        0      0     t_clusters
+  19               0            4352       11        0     10     c_clusters
+
+
+.nv.constant0._Z14invert_mappingPfS_ii	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  
+
+
+.nv.constant0._Z11kmeansPointPfiiiPiS_S_S0_	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  
+
+
+.nv.constant2	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  
+
+
+.text._Z14invert_mappingPfS_ii	PROGBITS
+bar = 0	reg = 10	lmem=0	smem=0
+0x00005de4  0x28004404  0x94001c04  0x2c000000  
+0x84009c04  0x2c000000  0x20001c03  0x20044000  
+0xc001dc23  0x1b0e4000  0x000001e7  0x80000000  
+0xd3f1dc23  0x1b0e4000  0x000001e7  0x80000000  
+0x10015de2  0x18000000  0x1000dce3  0x5000c000  
+0xc0011de4  0x28004000  0x60000007  0x60000002  
+0xa0009ca3  0x200b8000  0xd0001ca3  0x50004000  
+0x10419ce3  0x5000c000  0xb030dc43  0x48004000  
+0x80021ca3  0x200b8000  0x1001dce3  0x5000c000  
+0x08415e03  0x6000c000  0xd0011c03  0x48004000  
+0x90725c43  0x48004000  0x0081dc85  0x84000000  
+0x04001c03  0x4800c000  0x1001dc23  0x1a8e0000  
+0x10821c03  0x4801c000  0xfc925c43  0x48000000  
+0x0021dc85  0x94000000  0x08509c03  0x48010000  
+0x0c60dc43  0x48000000  0xe00001e7  0x4003fffe  
+0x00001df4  0x40000000  0x00001de7  0x80000000  
+
+
+
+.nv.info._Z14invert_mappingPfS_ii	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_CBANK_PARAM_OFFSETS
+	Format:	EIFMT_SVAL
+	Value:	0x0 0x8 0x10 0x14 
+	<0x2>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xb 0x180020 
+	<0x3>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x18
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x3	Offset  : 0x14	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x2	Offset  : 0x10	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x8>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x21018c 0x20 
+
+
+.text._Z11kmeansPointPfiiiPiS_S_S0_	PROGBITS
+bar = 0	reg = 12	lmem=0	smem=0
+0x00005de4  0x28004404  0x94009c04  0x2c000000  
+0x98001c04  0x2c000000  0xc0000007  0x60000004  
+0x50001c03  0x20044000  0x84009c04  0x2c000000  
+0x20001c03  0x50004000  0x30021c03  0x20044000  
+0xb083dc03  0x188e4000  0xe00025e7  0x40000003  
+0xc3f1dc23  0x1b0e4000  0x800001e7  0x40000003  
+0xa3f1dc23  0x188e4000  0xfc001de4  0x28000000  
+0xfc009de2  0x19fdffff  0xfc00dde2  0x1bffffff  
+0xe00021e7  0x40000001  0xa0011ca3  0x50004000  
+0x20019de4  0x28000000  0xfc01dde4  0x28000000  
+0xa0415c03  0x48004000  0x0842de03  0x6000c000  
+0xfc625c86  0x90004000  0x00b29c86  0x14000800  
+0x04411c03  0x4800c000  0xb0619c03  0x48004000  
+0x1445dc23  0x1a8e0000  0x10b2dc03  0x4800c000  
+0x28929d00  0x50000000  0x28a1dc00  0x300e0000  
+0xe00009e7  0x4003fffe  0x20001de7  0x40000000  
+0xfc01dde4  0x28000000  0x0875dc00  0x208e0000  
+0x0000c9e4  0x28000000  0x04001c03  0x4800c000  
+0x1c0089e4  0x28000000  0xc007dc23  0x1a8e4000  
+0x20000de7  0x4003fffd  0x00001df4  0x40000000  
+0xfc00ddf2  0x1bffffff  0xfc00ddf2  0x1bffffff  
+0x000025e7  0x80000000  0xe0009de4  0x28004000  
+0x10801c43  0x5000c000  0x10811c03  0x2005c000  
+0xf0015c43  0x48004000  0x0040dc85  0x94000000  
+0x00001de7  0x80000000  
+
+
+.nv.info._Z11kmeansPointPfiiiPiS_S_S0_	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_CBANK_PARAM_OFFSETS
+	Format:	EIFMT_SVAL
+	Value:	0x0 0x8 0xc 0x10 0x18 0x20 0x28 0x30 
+	<0x2>
+	Attribute:	EIATTR_IMAGE_SLOT
+	Format:	EIFMT_SVAL
+	Value:	0x10 0x0 
+	<0x3>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xc 0x380020 
+	<0x4>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x38
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x7	Offset  : 0x30	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x6	Offset  : 0x28	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x5	Offset  : 0x20	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x8>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x4	Offset  : 0x18	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x9>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x3	Offset  : 0x10	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xa>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x2	Offset  : 0xc	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xb>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x1	Offset  : 0x8	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xc>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xd>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x40030 0x2 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_IMAGE_SIZE
+	Format:	EIFMT_SVAL
+	Value:	0x12 0xffffffff 0xffffffff 0xffffffff 
+	<0x2>
+	Attribute:	EIATTR_IMAGE_SIZE
+	Format:	EIFMT_SVAL
+	Value:	0x11 0xffffffff 0xffffffff 0xffffffff 
+	<0x3>
+	Attribute:	EIATTR_IMAGE_SIZE
+	Format:	EIFMT_SVAL
+	Value:	0x10 0xffffffff 0xffffffff 0xffffffff 
+	<0x4>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z14invert_mappingPfS_ii(0xf)	min stack size: 0x0
+	<0x5>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z14invert_mappingPfS_ii(0xf)	frame size: 0x0
+	<0x6>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z11kmeansPointPfiiiPiS_S_S0_(0xe)	min stack size: 0x0
+	<0x7>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z11kmeansPointPfiiiPiS_S_S0_(0xe)	frame size: 0x0
+
+	code for sm_20
+		Function : _Z14invert_mappingPfS_ii
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0x94001c042c000000*/ 	S2R R0, SR_CTAid_X;
+	/*0010*/     /*0x84009c042c000000*/ 	S2R R2, SR_Tid_X;
+	/*0018*/     /*0x20001c0320044000*/ 	IMAD.U32.U32 R0, R0, c [0x0] [0x8], R2;
+	/*0020*/     /*0xc001dc231b0e4000*/ 	ISETP.GE.AND P0, pt, R0, c [0x0] [0x30], pt;
+	/*0028*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*0030*/     /*0xd3f1dc231b0e4000*/ 	ISETP.GE.AND P0, pt, RZ, c [0x0] [0x34], pt;
+	/*0038*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*0040*/     /*0x10015de218000000*/ 	MOV32I R5, 0x4;
+	/*0048*/     /*0x1000dce35000c000*/ 	IMUL.HI R3, R0, 0x4;
+	/*0050*/     /*0xc0011de428004000*/ 	MOV R4, c [0x0] [0x30];
+	/*0058*/     /*0x6000000760000002*/ 	SSY 0xf8;
+	/*0060*/     /*0xa0009ca3200b8000*/ 	IMAD R2.CC, R0, R5, c [0x0] [0x28];
+	/*0068*/     /*0xd0001ca350004000*/ 	IMUL R0, R0, c [0x0] [0x34];
+	/*0070*/     /*0x10419ce35000c000*/ 	IMUL.HI R6, R4, 0x4;
+	/*0078*/     /*0xb030dc4348004000*/ 	IADD.X R3, R3, c [0x0] [0x2c];
+	/*0080*/     /*0x80021ca3200b8000*/ 	IMAD R8.CC, R0, R5, c [0x0] [0x20];
+	/*0088*/     /*0x1001dce35000c000*/ 	IMUL.HI R7, R0, 0x4;
+	/*0090*/     /*0x08415e036000c000*/ 	SHL R5, R4, 0x2;
+	/*0098*/     /*0xd0011c0348004000*/ 	IADD R4, R0, c [0x0] [0x34];
+	/*00a0*/     /*0x90725c4348004000*/ 	IADD.X R9, R7, c [0x0] [0x24];
+	/*00a8*/     /*0x0081dc8584000000*/ 	LD.E R7, [R8];
+	/*00b0*/     /*0x04001c034800c000*/ 	IADD R0, R0, 0x1;
+	/*00b8*/     /*0x1001dc231a8e0000*/ 	ISETP.NE.AND P0, pt, R0, R4, pt;
+	/*00c0*/     /*0x10821c034801c000*/ 	IADD R8.CC, R8, 0x4;
+	/*00c8*/     /*0xfc925c4348000000*/ 	IADD.X R9, R9, RZ;
+	/*00d0*/     /*0x0021dc8594000000*/ 	ST.E [R2], R7;
+	/*00d8*/     /*0x08509c0348010000*/ 	IADD R2.CC, R5, R2;
+	/*00e0*/     /*0x0c60dc4348000000*/ 	IADD.X R3, R6, R3;
+	/*00e8*/     /*0xe00001e74003fffe*/ 	@P0 BRA 0xa8;
+	/*00f0*/     /*0x00001df440000000*/ 	NOP.S CC.T;
+	/*00f8*/     /*0x00001de780000000*/ 	EXIT;
+		.........................................
+
+
+		Function : _Z11kmeansPointPfiiiPiS_S_S0_
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0x94009c042c000000*/ 	S2R R2, SR_CTAid_X;
+	/*0010*/     /*0x98001c042c000000*/ 	S2R R0, SR_CTAid_Y;
+	/*0018*/     /*0xc000000760000004*/ 	SSY 0x150;
+	/*0020*/     /*0x50001c0320044000*/ 	IMAD.U32.U32 R0, R0, c [0x0] [0x14], R2;
+	/*0028*/     /*0x84009c042c000000*/ 	S2R R2, SR_Tid_X;
+	/*0030*/     /*0x20001c0350004000*/ 	IMUL.U32.U32 R0, R0, c [0x0] [0x8];
+	/*0038*/     /*0x30021c0320044000*/ 	IMAD.U32.U32 R8, R0, c [0x0] [0xc], R2;
+	/*0040*/     /*0xb083dc03188e4000*/ 	ISETP.LT.U32.AND P1, pt, R8, c [0x0] [0x2c], pt;
+	/*0048*/     /*0xe00025e740000003*/ 	@!P1 BRA 0x148;
+	/*0050*/     /*0xc3f1dc231b0e4000*/ 	ISETP.GE.AND P0, pt, RZ, c [0x0] [0x30], pt;
+	/*0058*/     /*0x800001e740000003*/ 	@P0 BRA 0x140;
+	/*0060*/     /*0xa3f1dc23188e4000*/ 	ISETP.LT.AND P0, pt, RZ, c [0x0] [0x28], pt;
+	/*0068*/     /*0xfc001de428000000*/ 	MOV R0, RZ;
+	/*0070*/     /*0xfc009de219fdffff*/ 	MOV32I R2, 0x7f7fffff;
+	/*0078*/     /*0xfc00dde21bffffff*/ 	MOV32I R3, -0x1;
+	/*0080*/     /*0xe00021e740000001*/ 	@!P0 BRA 0x100;
+	/*0088*/     /*0xa0011ca350004000*/ 	IMUL R4, R0, c [0x0] [0x28];
+	/*0090*/     /*0x20019de428000000*/ 	MOV R6, R8;
+	/*0098*/     /*0xfc01dde428000000*/ 	MOV R7, RZ;
+	/*00a0*/     /*0xa0415c0348004000*/ 	IADD R5, R4, c [0x0] [0x28];
+	/*00a8*/     /*0x0842de036000c000*/ 	SHL R11, R4, 0x2;
+	/*00b0*/     /*0xfc625c8690004000*/ 	TLD.LZ.T R9, R6, 0x0, 1D, 0x1;
+	/*00b8*/     /*0x00b29c8614000800*/ 	LDC R10, c [0x2] [R11];
+	/*00c0*/     /*0x04411c034800c000*/ 	IADD R4, R4, 0x1;
+	/*00c8*/     /*0xb0619c0348004000*/ 	IADD R6, R6, c [0x0] [0x2c];
+	/*00d0*/     /*0x1445dc231a8e0000*/ 	ISETP.NE.AND P2, pt, R4, R5, pt;
+	/*00d8*/     /*0x10b2dc034800c000*/ 	IADD R11, R11, 0x4;
+	/*00e0*/     /*0x28929d0050000000*/ 	FADD R10, R9, -R10;
+	/*00e8*/     /*0x28a1dc00300e0000*/ 	FFMA R7, R10, R10, R7;
+	/*00f0*/     /*0xe00009e74003fffe*/ 	@P2 BRA 0xb0;
+	/*00f8*/     /*0x20001de740000000*/ 	BRA 0x108;
+	/*0100*/     /*0xfc01dde428000000*/ 	MOV R7, RZ;
+	/*0108*/     /*0x0875dc00208e0000*/ 	FSETP.LT.AND P2, pt, R7, R2, pt;
+	/*0110*/     /*0x0000c9e428000000*/ 	@P2 MOV R3, R0;
+	/*0118*/     /*0x04001c034800c000*/ 	IADD R0, R0, 0x1;
+	/*0120*/     /*0x1c0089e428000000*/ 	@P2 MOV R2, R7;
+	/*0128*/     /*0xc007dc231a8e4000*/ 	ISETP.NE.AND P3, pt, R0, c [0x0] [0x30], pt;
+	/*0130*/     /*0x20000de74003fffd*/ 	@P3 BRA 0x80;
+	/*0138*/     /*0x00001df440000000*/ 	NOP.S CC.T;
+	/*0140*/     /*0xfc00ddf21bffffff*/ 	MOV32I.S R3, -0x1;
+	/*0148*/     /*0xfc00ddf21bffffff*/ 	MOV32I.S R3, -0x1;
+	/*0150*/     /*0x000025e780000000*/ 	@!P1 EXIT;
+	/*0158*/     /*0xe0009de428004000*/ 	MOV R2, c [0x0] [0x38];
+	/*0160*/     /*0x10801c435000c000*/ 	IMUL.U32.U32.HI R0, R8, 0x4;
+	/*0168*/     /*0x10811c032005c000*/ 	IMAD.U32.U32 R4.CC, R8, 0x4, R2;
+	/*0170*/     /*0xf0015c4348004000*/ 	IADD.X R5, R0, c [0x0] [0x3c];
+	/*0178*/     /*0x0040dc8594000000*/ 	ST.E [R4], R3;
+	/*0180*/     /*0x00001de780000000*/ 	EXIT;
+		..............................................
+
+
+
+Fatbin ptx code:
+================
+arch = sm_20
+code version = [2,3]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = kmeans_cuda.cu
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with /sciclone/data20/adwait/software/cuda/open64/lib//be
+	// nvopencc 4.0 built on 2011-05-12
+
+	//-----------------------------------------------------------
+	// Compiling kmeans_cuda.cpp3.i (/local/scr/adwait/TMPDIR/ccBI#.PIv00k)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"<command-line>"
+	.file	2	"kmeans_cuda.cudafe2.gpu"
+	.file	3	"/usr/lib/gcc/x86_64-redhat-linux/4.4.6/include/stddef.h"
+	.file	4	"/sciclone/data20/adwait/software/cuda/include/crt/device_runtime.h"
+	.file	5	"/sciclone/data20/adwait/software/cuda/include/host_defines.h"
+	.file	6	"/sciclone/data20/adwait/software/cuda/include/builtin_types.h"
+	.file	7	"/sciclone/data20/adwait/software/cuda/include/device_types.h"
+	.file	8	"/sciclone/data20/adwait/software/cuda/include/driver_types.h"
+	.file	9	"/sciclone/data20/adwait/software/cuda/include/surface_types.h"
+	.file	10	"/sciclone/data20/adwait/software/cuda/include/texture_types.h"
+	.file	11	"/sciclone/data20/adwait/software/cuda/include/vector_types.h"
+	.file	12	"/sciclone/data20/adwait/software/cuda/include/device_launch_parameters.h"
+	.file	13	"/sciclone/data20/adwait/software/cuda/include/crt/storage_class.h"
+	.file	14	"/usr/include/bits/types.h"
+	.file	15	"/usr/include/time.h"
+	.file	16	"kmeans_cuda_kernel.cu"
+	.file	17	"/sciclone/data20/adwait/software/cuda/include/common_functions.h"
+	.file	18	"/sciclone/data20/adwait/software/cuda/include/math_functions.h"
+	.file	19	"/sciclone/data20/adwait/software/cuda/include/math_constants.h"
+	.file	20	"/sciclone/data20/adwait/software/cuda/include/device_functions.h"
+	.file	21	"/sciclone/data20/adwait/software/cuda/include/sm_11_atomic_functions.h"
+	.file	22	"/sciclone/data20/adwait/software/cuda/include/sm_12_atomic_functions.h"
+	.file	23	"/sciclone/data20/adwait/software/cuda/include/sm_13_double_functions.h"
+	.file	24	"/sciclone/data20/adwait/software/cuda/include/sm_20_atomic_functions.h"
+	.file	25	"/sciclone/data20/adwait/software/cuda/include/sm_20_intrinsics.h"
+	.file	26	"/sciclone/data20/adwait/software/cuda/include/surface_functions.h"
+	.file	27	"/sciclone/data20/adwait/software/cuda/include/texture_fetch_functions.h"
+	.file	28	"/sciclone/data20/adwait/software/cuda/include/math_functions_dbl_ptx3.h"
+
+
+	.entry _Z14invert_mappingPfS_ii (
+		.param .u64 __cudaparm__Z14invert_mappingPfS_ii_input,
+		.param .u64 __cudaparm__Z14invert_mappingPfS_ii_output,
+		.param .s32 __cudaparm__Z14invert_mappingPfS_ii_npoints,
+		.param .s32 __cudaparm__Z14invert_mappingPfS_ii_nfeatures)
+	{
+	.reg .u32 %r<15>;
+	.reg .u64 %rd<12>;
+	.reg .f32 %f<3>;
+	.reg .pred %p<5>;
+	.loc	16	37	0
+$LDWbegin__Z14invert_mappingPfS_ii:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %tid.x;
+	add.u32 	%r5, %r4, %r3;
+	ld.param.s32 	%r6, [__cudaparm__Z14invert_mappingPfS_ii_npoints];
+	setp.le.s32 	%p1, %r6, %r5;
+	@%p1 bra 	$Lt_0_2050;
+	ld.param.s32 	%r7, [__cudaparm__Z14invert_mappingPfS_ii_nfeatures];
+	mov.u32 	%r8, 0;
+	setp.le.s32 	%p2, %r7, %r8;
+	@%p2 bra 	$Lt_0_2562;
+	mov.s32 	%r9, %r7;
+	mul.lo.s32 	%r10, %r7, %r5;
+	mov.s32 	%r11, %r10;
+	add.s32 	%r12, %r10, %r7;
+	cvt.s64.s32 	%rd1, %r6;
+	mul.wide.s32 	%rd2, %r6, 4;
+	ld.param.u64 	%rd3, [__cudaparm__Z14invert_mappingPfS_ii_output];
+	cvt.s64.s32 	%rd4, %r5;
+	mul.wide.s32 	%rd5, %r5, 4;
+	add.u64 	%rd6, %rd3, %rd5;
+	ld.param.u64 	%rd7, [__cudaparm__Z14invert_mappingPfS_ii_input];
+	cvt.s64.s32 	%rd8, %r10;
+	mul.wide.s32 	%rd9, %r10, 4;
+	add.u64 	%rd10, %rd7, %rd9;
+	mov.s32 	%r13, %r9;
+$Lt_0_3074:
+ //<loop> Loop body line 37, nesting depth: 1, estimated iterations: unknown
+	.loc	16	44	0
+	ld.global.f32 	%f1, [%rd10+0];
+	st.global.f32 	[%rd6+0], %f1;
+	add.s32 	%r11, %r11, 1;
+	add.u64 	%rd10, %rd10, 4;
+	add.u64 	%rd6, %rd2, %rd6;
+	setp.ne.s32 	%p3, %r11, %r12;
+	@%p3 bra 	$Lt_0_3074;
+$Lt_0_2562:
+$Lt_0_2050:
+	.loc	16	46	0
+	exit;
+$LDWend__Z14invert_mappingPfS_ii:
+	} // _Z14invert_mappingPfS_ii
+	.global .texref t_features;
+	.const .align 4 .b8 c_clusters[4352];
+
+	.entry _Z11kmeansPointPfiiiPiS_S_S0_ (
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__features,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nfeatures,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__npoints,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nclusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__membership,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__clusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__block_clusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__block_deltas)
+	{
+	.reg .u32 %r<35>;
+	.reg .u64 %rd<10>;
+	.reg .f32 %f<11>;
+	.reg .pred %p<8>;
+	.loc	16	65	0
+$LDWbegin__Z11kmeansPointPfiiiPiS_S_S0_:
+	mov.u32 	%r1, %nctaid.x;
+	mov.u32 	%r2, %ctaid.y;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.x;
+	add.u32 	%r5, %r4, %r3;
+	mov.u32 	%r6, %ntid.x;
+	mul.lo.u32 	%r7, %r6, %r5;
+	mov.u32 	%r8, %ntid.y;
+	mul.lo.u32 	%r9, %r8, %r7;
+	mov.u32 	%r10, %tid.x;
+	add.u32 	%r11, %r10, %r9;
+	ld.param.s32 	%r12, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__npoints];
+	setp.gt.u32 	%p1, %r12, %r11;
+	@!%p1 bra 	$Lt_1_4866;
+	ld.param.s32 	%r13, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nclusters];
+	mov.u32 	%r14, 0;
+	setp.le.s32 	%p2, %r13, %r14;
+	@%p2 bra 	$Lt_1_8194;
+	mov.s32 	%r15, %r13;
+	ld.param.s32 	%r16, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nfeatures];
+	mov.s32 	%r17, 0;
+	setp.gt.s32 	%p3, %r16, %r17;
+	mov.s32 	%r18, 0;
+	mov.f32 	%f1, 0f7f7fffff;     	// 3.40282e+38
+	mov.s32 	%r19, -1;
+	mov.u64 	%rd1, c_clusters;
+	mov.s32 	%r20, %r15;
+$Lt_1_5634:
+ //<loop> Loop body line 65, nesting depth: 1, estimated iterations: unknown
+	@!%p3 bra 	$Lt_1_8450;
+	mov.s32 	%r21, %r16;
+	mul.lo.s32 	%r22, %r16, %r18;
+	mov.s32 	%r23, %r22;
+	add.s32 	%r24, %r22, %r16;
+	cvt.s64.s32 	%rd2, %r22;
+	mul.wide.s32 	%rd3, %r22, 4;
+	add.u64 	%rd4, %rd1, %rd3;
+	mov.s32 	%r25, %r11;
+	mov.f32 	%f2, 0f00000000;     	// 0
+	mov.s32 	%r26, %r21;
+$Lt_1_6402:
+ //<loop> Loop body line 65, nesting depth: 2, estimated iterations: unknown
+	.loc	16	89	0
+	mov.u32 	%r27, %r25;
+	mov.s32 	%r28, 0;
+	mov.u32 	%r29, %r28;
+	mov.s32 	%r30, 0;
+	mov.u32 	%r31, %r30;
+	mov.s32 	%r32, 0;
+	mov.u32 	%r33, %r32;
+	tex.1d.v4.f32.s32 {%f3,%f4,%f5,%f6},[t_features,{%r27,%r29,%r31,%r33}];
+	mov.f32 	%f7, %f3;
+	.loc	16	91	0
+	ld.const.f32 	%f8, [%rd4+0];
+	sub.f32 	%f9, %f7, %f8;
+	fma.rn.f32 	%f2, %f9, %f9, %f2;
+	add.s32 	%r23, %r23, 1;
+	add.u64 	%rd4, %rd4, 4;
+	add.s32 	%r25, %r25, %r12;
+	setp.ne.s32 	%p4, %r23, %r24;
+	@%p4 bra 	$Lt_1_6402;
+	bra.uni 	$Lt_1_5890;
+$Lt_1_8450:
+	mov.f32 	%f2, 0f00000000;     	// 0
+$Lt_1_5890:
+	setp.lt.f32 	%p5, %f2, %f1;
+	@!%p5 bra 	$Lt_1_6914;
+	.loc	16	98	0
+	mov.f32 	%f1, %f2;
+	.loc	16	99	0
+	mov.s32 	%r19, %r18;
+$Lt_1_6914:
+	add.s32 	%r18, %r18, 1;
+	setp.ne.s32 	%p6, %r13, %r18;
+	@%p6 bra 	$Lt_1_5634;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_8194:
+	mov.s32 	%r19, -1;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_4866:
+	mov.s32 	%r19, -1;
+$Lt_1_4610:
+	@!%p1 bra 	$Lt_1_7682;
+	.loc	16	121	0
+	ld.param.u64 	%rd5, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__membership];
+	cvt.u64.u32 	%rd6, %r11;
+	mul.wide.u32 	%rd7, %r11, 4;
+	add.u64 	%rd8, %rd5, %rd7;
+	st.global.s32 	[%rd8+0], %r19;
+$Lt_1_7682:
+	.loc	16	184	0
+	exit;
+$LDWend__Z11kmeansPointPfiiiPiS_S_S0_:
+	} // _Z11kmeansPointPfiiiPiS_S_S0_
+	.global .texref t_features_flipped;
+	.global .texref t_clusters;
+

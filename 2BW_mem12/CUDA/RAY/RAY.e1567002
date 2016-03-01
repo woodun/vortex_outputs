@@ -1,0 +1,2 @@
+tput: No value for $TERM and no -T specified
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_RAY: line 1: 55010 Segmentation fault      (core dumped) ./gpgpu_ptx_sim__RAY 256 256 > output_RAY.txt

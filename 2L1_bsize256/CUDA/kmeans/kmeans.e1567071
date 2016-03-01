@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__kmeans: gpu-cache.cc:1054: virtual cache_request_status data_cache::access(new_addr_type, mem_fetch*, unsigned int, std::list<cache_event, std::allocator<cache_event> >&): Assertion `mf->get_data_size() <= m_config.get_line_sz()' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_kmeans: line 1: 16202 Aborted                 (core dumped) ./gpgpu_ptx_sim__kmeans -o -i ./data/204800.txt > output_kmeans.txt

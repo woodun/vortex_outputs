@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__RAY: gpu-cache.cc:84: virtual unsigned int l1d_cache_config::set_index(new_addr_type) const: Assertion `"\nGPGPU-Sim cache configuration error: The number of sets should be " "32 or 64 for the hashing set index function.\n" && 0' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_RAY: line 1:  3142 Aborted                 (core dumped) ./gpgpu_ptx_sim__RAY 256 256 > output_RAY.txt

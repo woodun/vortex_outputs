@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__BlackScholes: dram.cc:170: void dram_t::push(mem_fetch*): Assertion `id == data->get_tlx_addr().chip' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_BlackScholes: line 1: 24670 Aborted                 (core dumped) ./gpgpu_ptx_sim__BlackScholes > output_BlackScholes.txt

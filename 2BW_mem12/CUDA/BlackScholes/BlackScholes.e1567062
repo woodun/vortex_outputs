@@ -1,0 +1,2 @@
+tput: No value for $TERM and no -T specified
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_BlackScholes: line 1:  2245 Segmentation fault      (core dumped) ./gpgpu_ptx_sim__BlackScholes > output_BlackScholes.txt

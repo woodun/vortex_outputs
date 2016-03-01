@@ -1,0 +1,146 @@
+
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0      0     
+   5               0               0        3        0      0     
+   6               0             784        3        0      4     .text._Z13scalarProdGPUPfS_S_ii
+   7               0               0        3        0      7     .nv.info._Z13scalarProdGPUPfS_S_ii
+   8               0               0        3        0      9     .nv.info
+   9               0               0        3        0      8     .nv.shared._Z13scalarProdGPUPfS_S_ii
+  10               0               0        3        0      6     .nv.constant16._Z13scalarProdGPUPfS_S_ii
+  11               0               0        3        0      5     .nv.constant0._Z13scalarProdGPUPfS_S_ii
+  12               0             784       12       10      4     _Z13scalarProdGPUPfS_S_ii
+
+
+.nv.constant0._Z13scalarProdGPUPfS_S_ii	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  
+
+
+.nv.constant16._Z13scalarProdGPUPfS_S_ii	PROGBITS
+0x000003ff  
+
+
+.nv.shared._Z13scalarProdGPUPfS_S_ii	NOBITS
+   No data to be dumped. 
+
+
+.text._Z13scalarProdGPUPfS_S_ii	PROGBITS
+bar = 1	reg = 18	lmem=0	smem=4096
+0x00005de4  0x28004404  0x94001c04  0x2c000000  
+0xe001dc23  0x1b0e4000  0x000001e7  0x80000000  
+0x84019c04  0x2c000000  0xfc61dc23  0x198ec00f  
+0xfc63dc03  0x190e0000  0x00000007  0x60000007  
+0xc00021e7  0x40000006  0xf0009de4  0x28004000  
+0x0000dc23  0x7000c060  0x20011de4  0x28004000  
+0x08629e03  0x6000c000  0x00209c23  0x7000c060  
+0x08425e03  0x6000c000  0xf021dca3  0x20068000  
+0x0c221ca3  0x200c0000  0x0422dca3  0x20068000  
+0xe0000007  0x70000004  0x2075dc23  0x198e0000  
+0x20035de4  0x28000000  0x400009e7  0x40000004  
+0x10011de2  0x18000000  0x10815ce3  0x5000c000  
+0x00831c03  0x4800c010  0x40000007  0x60000003  
+0xa0809ca3  0x20098000  0x3075dc23  0x1a0e0000  
+0xfc031de4  0x28000000  0xb050dc43  0x48004000  
+0xc0811ca3  0x20098000  0xd0515c43  0x48004000  
+0x400029e7  0x40000002  0x00000007  0x60000002  
+0x00239c85  0x84000000  0x0043dc85  0x84000000  
+0x00241c85  0x84000040  0x00445c85  0x84000040  
+0x00d35c03  0x4800c020  0x00411c03  0x4801c080  
+0x3475dc23  0x1a0e0000  0xfc515c43  0x48000000  
+0x00209c03  0x4801c080  0xfc30dc43  0x48000000  
+0x3ce31c00  0x30180000  0x00d39c03  0x4800c010  
+0x45031c00  0x30180000  0x3875dc23  0x1a040000  
+0x200009e7  0x4003fffe  0x3475dc33  0x1a0e0000  
+0x000029e7  0xb0000000  0x00001df4  0x40000000  
+0x00209c85  0x84000000  0x00411c85  0x84000000  
+0x10231c00  0x30180000  0x00001de7  0xb0000000  
+0xfc031de4  0x28000000  0x00001de7  0xb0000000  
+0x20821c03  0x48004000  0x00a31c85  0xc9000000  
+0x2c85dc23  0x198e0000  0x24a29c03  0x48000000  
+0x600009e7  0x4003fffa  0x00009df2  0x18000008  
+0xfc1fdc03  0x207e0000  0x60000007  0x60000002  
+0xffffdc04  0x50ee0000  0x0865dc23  0x1b0e0000  
+0xe00009e7  0x40000001  0x20015de4  0x28004000  
+0x0860dc03  0x48000000  0x08211c03  0x48000000  
+0x08625e03  0x6000c000  0x08515e03  0x6000c000  
+0x08329e03  0x6000c000  0x00921c85  0xc1000000  
+0x00a1dc85  0xc1000000  0x2030dc03  0x48004000  
+0x1035dc23  0x188e0000  0x14a29c03  0x48000000  
+0x1c81dc00  0x50000000  0x0091dc85  0xc9000000  
+0x14925c03  0x48000000  0xe00009e7  0x4003fffe  
+0x04209c33  0x5800c000  0xfc25dc23  0x1a0e0000  
+0x200009e7  0x4003fffd  0xc000a5e7  0x40000000  
+0x800085e4  0x28004000  0x1000c4e3  0x5000c000  
+0x100104a3  0x2005c000  0x03f08485  0xc1000000  
+0x90314443  0x48004000  0x00408485  0x94000000  
+0x50001c03  0x48004000  0xe005dc23  0x188e4000  
+0xc00009e7  0x4003fff4  0x00001de7  0x80000000  
+
+
+
+.nv.info._Z13scalarProdGPUPfS_S_ii	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_CBANK_PARAM_OFFSETS
+	Format:	EIFMT_SVAL
+	Value:	0x0 0x8 0x10 0x18 0x1c 
+	<0x2>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0xb 0x200020 
+	<0x3>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x20
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x4	Offset  : 0x1c	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x3	Offset  : 0x18	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x8>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x9>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x2401b0 0x20 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z13scalarProdGPUPfS_S_ii(0xc)	min stack size: 0x0
+	<0x2>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z13scalarProdGPUPfS_S_ii(0xc)	frame size: 0x0
+

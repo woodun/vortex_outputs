@@ -1,0 +1,2 @@
+tput: No value for $TERM and no -T specified
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_SCP: line 1: 55011 Segmentation fault      (core dumped) ./gpgpu_ptx_sim__SCP > output_SCP.txt

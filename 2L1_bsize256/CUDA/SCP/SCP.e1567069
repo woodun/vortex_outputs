@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__SCP: gpu-cache.cc:1054: virtual cache_request_status data_cache::access(new_addr_type, mem_fetch*, unsigned int, std::list<cache_event, std::allocator<cache_event> >&): Assertion `mf->get_data_size() <= m_config.get_line_sz()' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_SCP: line 1: 16198 Aborted                 (core dumped) ./gpgpu_ptx_sim__SCP > output_SCP.txt

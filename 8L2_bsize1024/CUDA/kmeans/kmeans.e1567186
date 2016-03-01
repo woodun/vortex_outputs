@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__kmeans: dram.cc:170: void dram_t::push(mem_fetch*): Assertion `id == data->get_tlx_addr().chip' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_kmeans: line 1:  7030 Aborted                 (core dumped) ./gpgpu_ptx_sim__kmeans -o -i ./data/204800.txt > output_kmeans.txt

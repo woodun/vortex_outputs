@@ -1,0 +1,131 @@
+
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0      0     
+   5               0               0        3        0      0     
+   6               0             520        3        0      4     .text._Z6KernelP4NodePiPbS2_S1_S2_i
+   7               0               0        3        0      6     .nv.info._Z6KernelP4NodePiPbS2_S1_S2_i
+   8               0               0        3        0      7     .nv.info
+   9               0               0        3        0      5     .nv.constant0._Z6KernelP4NodePiPbS2_S1_S2_i
+  10               0             520       12       10      4     _Z6KernelP4NodePiPbS2_S1_S2_i
+
+
+.nv.constant0._Z6KernelP4NodePiPbS2_S1_S2_i	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+
+
+
+.text._Z6KernelP4NodePiPbS2_S1_S2_i	PROGBITS
+bar = 0	reg = 18	lmem=0	smem=0
+0x00005de4  0x28004404  0x94001c04  0x2c000000  
+0x84009c04  0x2c000000  0x08001d03  0x40000000  
+0x4001dc23  0x1b0e4001  0x000001e7  0x80000000  
+0x7c031c23  0x7000c004  0xc0009c03  0x48014000  
+0xd0c0dc43  0x48004000  0x00211c25  0x84000000  
+0xfc41dc23  0x190e0000  0x000001e7  0x80000000  
+0x74011c03  0x5800c000  0xe0019c03  0x48014000  
+0x80021de4  0x28004000  0x04025de2  0x18000000  
+0x10c15c63  0x40000000  0xf0c1dc43  0x48004000  
+0x20011c03  0x2011c000  0x002fdc25  0x94000000  
+0x00625c25  0x94000000  0x90515c43  0x48004000  
+0x00435c85  0x84000000  0x10421c85  0x84000000  
+0x34829c03  0x48000000  0x34a1dc23  0x198e0000  
+0x000001e7  0x80000000  0xa0009de4  0x28004000  
+0x10d0dce3  0x5000c000  0x10d09ca3  0x2005c000  
+0xb030dc43  0x48004000  0x00221c85  0x84000000  
+0x7c825c23  0x7000c004  0xe0819c03  0x48014000  
+0xf091dc43  0x48004000  0x00619c25  0x84000000  
+0xfc61dc23  0x1a8e0000  0xa00081e7  0x40000002  
+0x7801a003  0x5800c000  0x0003a1e4  0x28004001  
+0x7881e023  0x5800c000  0x040461e2  0x18000000  
+0x18c1a043  0x40000000  0x1002a003  0x201dc000  
+0x1062e043  0x48004001  0x1081a003  0x201dc000  
+0x00a2e085  0x84000000  0x1071e043  0x48004001  
+0xc0822003  0x48014000  0x2002a1e4  0x28004001  
+0xd0926043  0x48004000  0x04b42003  0x4800c000  
+0x3002e1e4  0x28004001  0x00642085  0x94000000  
+0x00846025  0x94000000  0x00a46025  0x94000000  
+0x0043e085  0x84000000  0x1043a085  0x84000000  
+0x38f2a003  0x48000000  0x04d35c03  0x4800c000  
+0x10209c03  0x4801c000  0x34a1dc23  0x1a0e0000  
+0xfc30dc43  0x48000000  0xe00001e7  0x4003fffb  
+0x00001de7  0x80000000  
+
+
+.nv.info._Z6KernelP4NodePiPbS2_S1_S2_i	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_CBANK_PARAM_OFFSETS
+	Format:	EIFMT_SVAL
+	Value:	0x0 0x8 0x10 0x18 0x20 0x28 0x30 
+	<0x2>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0x9 0x340020 
+	<0x3>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x34
+	<0x4>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x6	Offset  : 0x30	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x5	Offset  : 0x28	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x4	Offset  : 0x20	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x3	Offset  : 0x18	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x8>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x9>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xa>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xb>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x21018c 0x20 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z6KernelP4NodePiPbS2_S1_S2_i(0xa)	min stack size: 0x0
+	<0x2>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z6KernelP4NodePiPbS2_S1_S2_i(0xa)	frame size: 0x0
+
