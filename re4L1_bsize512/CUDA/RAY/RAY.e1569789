@@ -1,0 +1,3 @@
+tput: No value for $TERM and no -T specified
+gpgpu_ptx_sim__RAY: dram.cc:167: void dram_t::push(mem_fetch*): Assertion `id == data->get_tlx_addr().chip' failed.
+/sciclone/data20/adwait/applications/bash-scripts/run_scripts/CUDA/mainscript_RAY: line 1:  4440 Aborted                 (core dumped) ./gpgpu_ptx_sim__RAY 256 256 > output_RAY.txt

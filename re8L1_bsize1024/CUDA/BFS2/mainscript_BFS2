@@ -1,0 +1,1 @@
+./gpgpu_ptx_sim__BFS2 ./data/graph32k500kedges_SV.txt > output_BFS2S.txt
