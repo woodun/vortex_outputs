@@ -1,0 +1,221 @@
+
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with /sciclone/data20/adwait/software/cuda/open64/lib//be
+	// nvopencc 4.0 built on 2011-05-12
+
+	//-----------------------------------------------------------
+	// Compiling kmeans_cuda.cpp3.i (/local/scr/adwait/TMPDIR/ccBI#.PIv00k)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"<command-line>"
+	.file	2	"kmeans_cuda.cudafe2.gpu"
+	.file	3	"/usr/lib/gcc/x86_64-redhat-linux/4.4.6/include/stddef.h"
+	.file	4	"/sciclone/data20/adwait/software/cuda/include/crt/device_runtime.h"
+	.file	5	"/sciclone/data20/adwait/software/cuda/include/host_defines.h"
+	.file	6	"/sciclone/data20/adwait/software/cuda/include/builtin_types.h"
+	.file	7	"/sciclone/data20/adwait/software/cuda/include/device_types.h"
+	.file	8	"/sciclone/data20/adwait/software/cuda/include/driver_types.h"
+	.file	9	"/sciclone/data20/adwait/software/cuda/include/surface_types.h"
+	.file	10	"/sciclone/data20/adwait/software/cuda/include/texture_types.h"
+	.file	11	"/sciclone/data20/adwait/software/cuda/include/vector_types.h"
+	.file	12	"/sciclone/data20/adwait/software/cuda/include/device_launch_parameters.h"
+	.file	13	"/sciclone/data20/adwait/software/cuda/include/crt/storage_class.h"
+	.file	14	"/usr/include/bits/types.h"
+	.file	15	"/usr/include/time.h"
+	.file	16	"kmeans_cuda_kernel.cu"
+	.file	17	"/sciclone/data20/adwait/software/cuda/include/common_functions.h"
+	.file	18	"/sciclone/data20/adwait/software/cuda/include/math_functions.h"
+	.file	19	"/sciclone/data20/adwait/software/cuda/include/math_constants.h"
+	.file	20	"/sciclone/data20/adwait/software/cuda/include/device_functions.h"
+	.file	21	"/sciclone/data20/adwait/software/cuda/include/sm_11_atomic_functions.h"
+	.file	22	"/sciclone/data20/adwait/software/cuda/include/sm_12_atomic_functions.h"
+	.file	23	"/sciclone/data20/adwait/software/cuda/include/sm_13_double_functions.h"
+	.file	24	"/sciclone/data20/adwait/software/cuda/include/sm_20_atomic_functions.h"
+	.file	25	"/sciclone/data20/adwait/software/cuda/include/sm_20_intrinsics.h"
+	.file	26	"/sciclone/data20/adwait/software/cuda/include/surface_functions.h"
+	.file	27	"/sciclone/data20/adwait/software/cuda/include/texture_fetch_functions.h"
+	.file	28	"/sciclone/data20/adwait/software/cuda/include/math_functions_dbl_ptx3.h"
+
+
+	.entry _Z14invert_mappingPfS_ii (
+		.param .u64 __cudaparm__Z14invert_mappingPfS_ii_input,
+		.param .u64 __cudaparm__Z14invert_mappingPfS_ii_output,
+		.param .s32 __cudaparm__Z14invert_mappingPfS_ii_npoints,
+		.param .s32 __cudaparm__Z14invert_mappingPfS_ii_nfeatures)
+	{
+	.reg .u32 %r<15>;
+	.reg .u64 %rd<12>;
+	.reg .f32 %f<3>;
+	.reg .pred %p<5>;
+	.loc	16	37	0
+$LDWbegin__Z14invert_mappingPfS_ii:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %tid.x;
+	add.u32 	%r5, %r4, %r3;
+	ld.param.s32 	%r6, [__cudaparm__Z14invert_mappingPfS_ii_npoints];
+	setp.le.s32 	%p1, %r6, %r5;
+	@%p1 bra 	$Lt_0_2050;
+	ld.param.s32 	%r7, [__cudaparm__Z14invert_mappingPfS_ii_nfeatures];
+	mov.u32 	%r8, 0;
+	setp.le.s32 	%p2, %r7, %r8;
+	@%p2 bra 	$Lt_0_2562;
+	mov.s32 	%r9, %r7;
+	mul.lo.s32 	%r10, %r7, %r5;
+	mov.s32 	%r11, %r10;
+	add.s32 	%r12, %r10, %r7;
+	cvt.s64.s32 	%rd1, %r6;
+	mul.wide.s32 	%rd2, %r6, 4;
+	ld.param.u64 	%rd3, [__cudaparm__Z14invert_mappingPfS_ii_output];
+	cvt.s64.s32 	%rd4, %r5;
+	mul.wide.s32 	%rd5, %r5, 4;
+	add.u64 	%rd6, %rd3, %rd5;
+	ld.param.u64 	%rd7, [__cudaparm__Z14invert_mappingPfS_ii_input];
+	cvt.s64.s32 	%rd8, %r10;
+	mul.wide.s32 	%rd9, %r10, 4;
+	add.u64 	%rd10, %rd7, %rd9;
+	mov.s32 	%r13, %r9;
+$Lt_0_3074:
+ //<loop> Loop body line 37, nesting depth: 1, estimated iterations: unknown
+	.loc	16	44	0
+	ld.global.f32 	%f1, [%rd10+0];
+	st.global.f32 	[%rd6+0], %f1;
+	add.s32 	%r11, %r11, 1;
+	add.u64 	%rd10, %rd10, 4;
+	add.u64 	%rd6, %rd2, %rd6;
+	setp.ne.s32 	%p3, %r11, %r12;
+	@%p3 bra 	$Lt_0_3074;
+$Lt_0_2562:
+$Lt_0_2050:
+	.loc	16	46	0
+	exit;
+$LDWend__Z14invert_mappingPfS_ii:
+	} // _Z14invert_mappingPfS_ii
+	.global .texref t_features;
+	.const .align 4 .b8 c_clusters[4352];
+
+	.entry _Z11kmeansPointPfiiiPiS_S_S0_ (
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__features,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nfeatures,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__npoints,
+		.param .s32 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nclusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__membership,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__clusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__block_clusters,
+		.param .u64 __cudaparm__Z11kmeansPointPfiiiPiS_S_S0__block_deltas)
+	{
+	.reg .u32 %r<35>;
+	.reg .u64 %rd<10>;
+	.reg .f32 %f<11>;
+	.reg .pred %p<8>;
+	.loc	16	65	0
+$LDWbegin__Z11kmeansPointPfiiiPiS_S_S0_:
+	mov.u32 	%r1, %nctaid.x;
+	mov.u32 	%r2, %ctaid.y;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.x;
+	add.u32 	%r5, %r4, %r3;
+	mov.u32 	%r6, %ntid.x;
+	mul.lo.u32 	%r7, %r6, %r5;
+	mov.u32 	%r8, %ntid.y;
+	mul.lo.u32 	%r9, %r8, %r7;
+	mov.u32 	%r10, %tid.x;
+	add.u32 	%r11, %r10, %r9;
+	ld.param.s32 	%r12, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__npoints];
+	setp.gt.u32 	%p1, %r12, %r11;
+	@!%p1 bra 	$Lt_1_4866;
+	ld.param.s32 	%r13, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nclusters];
+	mov.u32 	%r14, 0;
+	setp.le.s32 	%p2, %r13, %r14;
+	@%p2 bra 	$Lt_1_8194;
+	mov.s32 	%r15, %r13;
+	ld.param.s32 	%r16, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__nfeatures];
+	mov.s32 	%r17, 0;
+	setp.gt.s32 	%p3, %r16, %r17;
+	mov.s32 	%r18, 0;
+	mov.f32 	%f1, 0f7f7fffff;     	// 3.40282e+38
+	mov.s32 	%r19, -1;
+	mov.u64 	%rd1, c_clusters;
+	mov.s32 	%r20, %r15;
+$Lt_1_5634:
+ //<loop> Loop body line 65, nesting depth: 1, estimated iterations: unknown
+	@!%p3 bra 	$Lt_1_8450;
+	mov.s32 	%r21, %r16;
+	mul.lo.s32 	%r22, %r16, %r18;
+	mov.s32 	%r23, %r22;
+	add.s32 	%r24, %r22, %r16;
+	cvt.s64.s32 	%rd2, %r22;
+	mul.wide.s32 	%rd3, %r22, 4;
+	add.u64 	%rd4, %rd1, %rd3;
+	mov.s32 	%r25, %r11;
+	mov.f32 	%f2, 0f00000000;     	// 0
+	mov.s32 	%r26, %r21;
+$Lt_1_6402:
+ //<loop> Loop body line 65, nesting depth: 2, estimated iterations: unknown
+	.loc	16	89	0
+	mov.u32 	%r27, %r25;
+	mov.s32 	%r28, 0;
+	mov.u32 	%r29, %r28;
+	mov.s32 	%r30, 0;
+	mov.u32 	%r31, %r30;
+	mov.s32 	%r32, 0;
+	mov.u32 	%r33, %r32;
+	tex.1d.v4.f32.s32 {%f3,%f4,%f5,%f6},[t_features,{%r27,%r29,%r31,%r33}];
+	mov.f32 	%f7, %f3;
+	.loc	16	91	0
+	ld.const.f32 	%f8, [%rd4+0];
+	sub.f32 	%f9, %f7, %f8;
+	fma.rn.f32 	%f2, %f9, %f9, %f2;
+	add.s32 	%r23, %r23, 1;
+	add.u64 	%rd4, %rd4, 4;
+	add.s32 	%r25, %r25, %r12;
+	setp.ne.s32 	%p4, %r23, %r24;
+	@%p4 bra 	$Lt_1_6402;
+	bra.uni 	$Lt_1_5890;
+$Lt_1_8450:
+	mov.f32 	%f2, 0f00000000;     	// 0
+$Lt_1_5890:
+	setp.lt.f32 	%p5, %f2, %f1;
+	@!%p5 bra 	$Lt_1_6914;
+	.loc	16	98	0
+	mov.f32 	%f1, %f2;
+	.loc	16	99	0
+	mov.s32 	%r19, %r18;
+$Lt_1_6914:
+	add.s32 	%r18, %r18, 1;
+	setp.ne.s32 	%p6, %r13, %r18;
+	@%p6 bra 	$Lt_1_5634;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_8194:
+	mov.s32 	%r19, -1;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_4866:
+	mov.s32 	%r19, -1;
+$Lt_1_4610:
+	@!%p1 bra 	$Lt_1_7682;
+	.loc	16	121	0
+	ld.param.u64 	%rd5, [__cudaparm__Z11kmeansPointPfiiiPiS_S_S0__membership];
+	cvt.u64.u32 	%rd6, %r11;
+	mul.wide.u32 	%rd7, %r11, 4;
+	add.u64 	%rd8, %rd5, %rd7;
+	st.global.s32 	[%rd8+0], %r19;
+$Lt_1_7682:
+	.loc	16	184	0
+	exit;
+$LDWend__Z11kmeansPointPfiiiPiS_S_S0_:
+	} // _Z11kmeansPointPfiiiPiS_S_S0_
+	.global .texref t_features_flipped;
+	.global .texref t_clusters;
+
